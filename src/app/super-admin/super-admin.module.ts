@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SuperAdminRoutingModule } from './super-admin-routing.module';
+<<<<<<< HEAD
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { BaseComponent } from './base/base.component';
 import { HeaderComponent } from './header/header.component';
@@ -59,5 +60,15 @@ import * as Charts from 'fusioncharts/fusioncharts.charts';*/
     CustomerComponent,
     
     ]
+=======
+
+
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule,
+    SuperAdminRoutingModule
+  ]
+>>>>>>> d9d6ae9d7158a701861c288c688887384543c9f5
 })
 export class SuperAdminModule { }

@@ -1,5 +1,6 @@
 <mat-toolbar class="app-header">
   <mat-toolbar-row class="container">
+<<<<<<< HEAD
     <div class="header-logo">
             <a routerLink="/demo4">
                 <img alt="logo" [src]="headerlogo"/>
@@ -20,3 +21,24 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
+=======
+    <div class="header-logo mr-5">
+      <a routerLink="/demo4">
+        <img alt="logo" [src]="headerlogo" />
+      </a>
+    </div>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/dashboard'"><span> Dashboard </span></a>
+      <a mat-button [routerLink]="'/request'">
+        <span matBadge="4" matBadgeOverlap="false">My Requests</span>
+      </a>
+    </div>
+    <button mat-button [matMenuTriggerFor]="menu"><span>Profile</span></button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Edit Profile</button>
+      <button mat-menu-item>Logout</button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+>>>>>>> d9d6ae9d7158a701861c288c688887384543c9f5
