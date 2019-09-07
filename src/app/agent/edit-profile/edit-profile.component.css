@@ -1,0 +1,52 @@
+.profile-body {
+	background-color: #fff !important;
+	padding: 20px;
+}
+.basic-info {
+	float: left;
+	width: 40% !important;
+	margin: 20px;
+}
+.mat-tab-body-content {
+	background-color: #fff !important;
+}
+.account-detail {
+	float: left;
+	width: 100%;
+	margin: 20px;
+}
+.account-title {
+	float: left;
+	width: 30%;
+}
+.account-cap {
+	float: left;
+    width: 70%;
+    padding: 0 50px;
+}
+.theme-color {
+	background-color: #fe8f00;
+	color: #fff;
+}
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+	background-color: #fe8f00 !important;
+}
+.example-section{float: left;
+    width: 100%;
+}
+.setting-title{float: left;
+    width:30%;
+    padding-top: 10px;
+}
+.setting-cap{float: left;
+    width:70%;
+    padding-top: 10px;
+}
+.result{float: left;
+    width: 100%;
+    margin:20px 0;
+}
+.example-margin{float: left;
+    width:100%;
+    padding-top: 10px;
+}

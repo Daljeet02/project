@@ -1,0 +1,7 @@
+table {
+    width: 100%;
+  }
+.mat-elevation-z8{
+    box-shadow: none !important;
+}
+.table-heading{width:100%;border-bottom:1px solid #ccc;padding: 10px;}

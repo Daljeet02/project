@@ -1,1 +1,107 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: 'eina03-regularuploaded_file';
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f6fd !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #083d77 !important;
+  font-family: 'eina03-bolduploaded_file';
+}
+
+.table-container {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding: 25px;
+}
+
+/*Card*/
+.kt-widget24 {
+  padding: 25px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.kt-widget24 .kt-widget24__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card {
+  padding: 1.2rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+}
+
+.card-details {
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card-stats {
+  font-size: 1.75rem;
+  font-weight: 500;
+  padding-left: 0.5rem;
+}
+
+/*Progress bar*/
+.card .mat-progress-bar {
+  height: 0.5rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.bg-success .mat-progress-bar-fill::after {
+  background-color: #1dc9b7;
+}
+
+.bg-primary .mat-progress-bar-fill::after {
+  background-color: #366cf3;
+}
+
+.bg-warning .mat-progress-bar-fill::after {
+  background-color: #ffb822;
+}
+
+.bg-danger .mat-progress-bar-fill::after {
+  background-color: #fd397a;
+}

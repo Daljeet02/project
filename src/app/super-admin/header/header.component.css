@@ -1,0 +1,7 @@
+.app-header {
+    background: #fff;
+    margin-bottom: 4%;
+    box-shadow: 0 0 10px 3px rgba(41, 50, 66, .075);
+}
+.header-logo{width: 210px;padding: 18px 0;}
+.header-logo img{width: 100%;}

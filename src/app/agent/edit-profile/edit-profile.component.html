@@ -1,0 +1,144 @@
+<div class="profile-body">
+<mat-tab-group dynamicHeight>
+  
+    <mat-tab  label="Basic Info">
+      <form>  
+    <mat-form-field  class="basic-info">
+      <mat-label>First name</mat-label>
+      <input matInput (cdkAutofill)="firstNameAutofilled = $event.isAutofilled">
+      <mat-hint *ngIf="firstNameAutofilled">Autofilled!</mat-hint>
+    </mat-form-field>
+    <mat-form-field class="basic-info">
+      <mat-label>Last name</mat-label>
+      <input matInput (cdkAutofill)="lastNameAutofilled = $event.isAutofilled">
+     
+    </mat-form-field>
+    <mat-form-field class="basic-info">
+      <mat-label>Email</mat-label>
+      <input matInput (cdkAutofill)="lastNameAutofilled = $event.isAutofilled">
+     
+    </mat-form-field>
+    <mat-form-field class="basic-info">
+      <span matPrefix>+1 &nbsp;</span>
+      <input  type="tel" matInput placeholder="Telephone">
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+    
+  </form>
+
+    </mat-tab>
+  
+    <mat-tab label="Account">
+        
+      <div class="account-detail">
+      <div class="account-title float-left w50">
+            <h5>Login verification</h5>
+      </div>
+      <div class="account-cap float-left w50">
+    <button mat-button color="primary">Setup Login Verification</button>
+    <p>After you log in, you will be asked for additional information to confirm your identity and protect your account from being compromised. <span>Learn more.</span></p>
+      </div>
+      </div>
+      <div class="account-detail">
+      <div class="account-title float-left w50">
+            <h5>Password reset verification</h5>
+      </div>
+      <div class="account-cap float-left w50">
+    <mat-checkbox>Require personal information to reset your password.</mat-checkbox>
+    <p>For extra security, this requires you to confirm your email or phone number when you reset your password. <span>Learn more.</span></p>
+      </div>
+      </div>
+      <div class="account-detail">
+      <button mat-raised-button class="theme-color">Accent</button>
+    </div>
+    </mat-tab>
+    <mat-tab label="Change Password">
+         
+     <mat-form-field class="basic-info">
+      <input matInput placeholder="Current password" [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>   
+    </button>
+    </mat-form-field>
+    <mat-form-field class="basic-info">
+      <input matInput placeholder="New password" [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+   
+    </mat-form-field>
+    <mat-form-field class="basic-info">
+      <input  matInput placeholder="Verify password" [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    
+    </mat-tab>
+    <mat-tab label="Setting">
+      <mat-card class="result">
+    <mat-card-content>
+      <h2 class="example-h2">Setup Email Notification:</h2>
+      
+      <section class="example-section">
+        <div class="setting-title">
+        <h5> Email Notification</h5>
+        </div>
+        <div class="setting-cap">
+        <mat-slide-toggle
+       
+            class="example-margin"
+            [color]="color"
+            [checked]="checked"
+            [disabled]="disabled">
+          
+        </mat-slide-toggle>
+        </div>
+      </section>
+       <section class="example-section">
+          <div class="setting-title">
+         <h5>Send Copy To Personal Email</h5>
+         </div>
+         <div class="setting-cap">
+        <mat-slide-toggle
+    
+            class="example-margin"
+            [color]="color"
+            [checked]="checked"
+            [disabled]="disabled">
+          
+        </mat-slide-toggle>
+      </div>
+      </section>
+    </mat-card-content>
+  </mat-card>
+   <mat-card class="result">
+    <mat-card-content>
+      <h2 class="example-h2">Activity Related Emails:</h2>
+  
+      <section class="example-section">
+          <div class="setting-title">
+        <h5>When To Email</h5>
+        </div>
+        <div class="setting-cap">
+        <mat-checkbox class="example-margin">You have new notifications.</mat-checkbox>
+        <mat-checkbox class="example-margin">You're sent a direct message</mat-checkbox>
+        <mat-checkbox class="example-margin">Someone adds you as a connection</mat-checkbox>
+      </div>
+      </section>
+       <section class="example-section">
+          <div class="setting-title">
+         <h5>When To Escalate Emails</h5>
+         </div>
+         <div class="setting-cap">
+        <mat-checkbox class="example-margin">Upon new order.</mat-checkbox>
+        <mat-checkbox class="example-margin" >New membership approval</mat-checkbox>
+        <mat-checkbox class="example-margin">Member registration</mat-checkbox>
+        </div>
+      </section>
+    </mat-card-content>
+  </mat-card>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+  
