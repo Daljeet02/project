@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-<<<<<<< HEAD
 import {  AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { BaseComponent } from './base/base.component';
 import { RequestComponent } from './request/request.component';
@@ -37,11 +36,6 @@ const routes: Routes = [
 		]
 	},
 ];
-=======
-
-
-const routes: Routes = [];
->>>>>>> d9d6ae9d7158a701861c288c688887384543c9f5
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
