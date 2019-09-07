@@ -1,0 +1,13 @@
+<p>{{title}}</p>
+<span> You've clicked  
+<button (click)="click()"> {{counter}} </button> times.</span>
+<br><br>
+
+
+<input [(ngModel)]="fullName" /> <br/><br/>    
+<p> {{fullName}} </p>  
+
+<div [class.active]="counter > 4">
+<ng-template [ngIf] =" counter > 4" [ngIfElse] ="none" >It's greater than 4</ng-template>
+<ng-template #none >It's NOT greater than 4</ng-template>
+</div>

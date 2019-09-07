@@ -1,1 +1,195 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: 'eina03-regularuploaded_file';
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f6fd !important;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #083d77 !important;
+  font-family: 'eina03-bolduploaded_file';
+}
+
+.container {
+  max-width: 1380px !important;
+}
+
+.primary-btn{background: #fe8f01 !important;
+    border-radius: 5px;
+    color: #fff !important;
+    font-size: 14px;
+    font-family: 'eina03-semibolduploaded_file';
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    justify-content: center;}
+
+.secondary-btn{background: #336699 !important;
+    border-radius: 5px;
+    color: #fff !important;
+    font-size: 14px;
+    font-family: 'eina03-semibolduploaded_file';
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    justify-content: center;}
+
+/*fusioncharts g>text{display: none;}
+*/
+.table-container {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding: 25px;
+}
+
+/*Card*/
+
+.card{border: 0 !important;}
+
+.card-header,.mat-tab-header{background-color: #fff !important;}
+
+.card-header{display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;-webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;}
+
+.card-title {
+  font-size: 1.1rem;
+}
+.card-body {
+    padding: 0.9rem 1.25rem !important;
+}
+.card-details {
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.card-stats {
+  font-size: 1.75rem;
+  font-weight: 500;
+  padding-left: 0.5rem;
+}
+
+/*Progress bar*/
+.card .progress {
+  height: 0.6rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card .mat-progress-bar-buffer {
+  background-color: #ebedf2;
+}
+
+.bg-success .mat-progress-bar-fill::after {
+  background-color: #28a745;
+}
+
+.bg-primary .mat-progress-bar-fill::after {
+  background-color: #366cf3;
+}
+
+.bg-warning .mat-progress-bar-fill::after {
+  background-color: #ffb822;
+}
+
+.bg-danger .mat-progress-bar-fill::after {
+  background-color: #fd397a;
+}
+
+
+.card-item .card {
+  padding: 1.2rem;
+  border: 0;
+  border-bottom: solid;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.card-item:nth-child(1) .card {
+  border-image: linear-gradient(45deg, rgb(54, 108, 243), rgba(0, 123, 255, 0.1)) 1;
+}
+
+.card-item:nth-child(2) .card {
+  border-image: linear-gradient(45deg, rgb(255, 184, 34), rgba(255, 184, 34, 0.1)) 1;
+}
+
+.card-item:nth-child(3) .card {
+  border-image: linear-gradient(45deg, rgb(253, 57, 122), rgba(253, 57, 122, 0.1)) 1;
+}
+
+.card-item:nth-child(4) .card {
+  border-image: linear-gradient(45deg, rgb(40, 167, 69), rgba(40, 167, 69, 0.1)) 1;
+}
+
+/*Notification*/
+.notification-list a {
+  font-size: 14px;
+  color: #74788d;
+  border: 0;
+  border-bottom: 2px dashed #ebedf2;
+  padding: 1rem 0;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.notification-list a:last-child{border-bottom:0;}
+.notification-list a .fa {
+  font-size: 1.6rem;
+  padding-right: 2.5rem;
+}
+
+.notification-list a .fa+span {
+  flex-grow: 1;
+  font-weight: 500;
+}
+
+.notification-list a:hover {
+  text-decoration: none;
+}
+
+.notification-list a:hover .fa+span {
+  color: #083d77;
+}
+
+.table-container .status-badge{display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 0.8rem;
+    height: 0;
+    width: auto;
+    padding: 0.75rem 0.75rem;
+    border-radius: 2rem;}

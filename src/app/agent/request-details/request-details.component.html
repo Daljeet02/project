@@ -1,0 +1,145 @@
+<div class="row">
+  <div class="col-4 customer-info-details">
+    <div class="card p-4">
+      <div class="customer-info-header">
+        <div>
+          <img src="{{customerimg}}" alt="image">
+        </div>
+        <div class="pl-3">
+          {{customername}}
+        </div>
+      </div>
+      <div class="customer-info-body pt-4 flex-grow-1">
+        <div class="customer-info-item">
+          <span class="customer-item-label">Question:</span>
+          <span>How do I install Skype?</span>
+        </div>
+        <div class="customer-info-item">
+          <span class="customer-item-label">Amount:</span>
+          <span>$320</span>
+        </div>
+        <div class="customer-info-item">
+          <span class="customer-item-label">Premium service:</span>
+          <span>No</span>
+        </div>
+        <div class="customer-info-item">
+          <span class="customer-item-label">Category:</span>
+          <span>Law</span>
+        </div>
+        <div class="customer-info-item">
+          <span class="customer-item-label">Time:</span>
+          <span>2 hours</span>
+        </div>
+        <div class="customer-info-item">
+          <span class="customer-item-label">Previously Asked Questions:</span>
+          <span><button mat-icon-button [routerLink]="'/previously-asked-question'">
+            2
+          </button></span>
+        </div>
+      </div>
+      <div class="row mt-4">
+          <div class="col-6">
+            <button mat-button (click)="refund()" class="btn primary-btn btn-block">Refund</button>
+          </div>
+          <div class="col-6">
+            <button mat-button (click)="premiumservice()" class="btn primary-btn btn-block">Offer Premium Service</button>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="card">
+      <div class="card-header">
+        {{customername}}
+        <div>
+          <button mat-button class="btn primary-btn mr-2">Accept</button>
+          <button mat-button [matMenuTriggerFor]="menu" class="btn secondary-btn">Reject</button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Report this question as span</button>
+            <button mat-menu-item>Duplicate question</button>
+            <button mat-menu-item>Miscategorized</button>
+            <button mat-menu-item>Refund Customer</button>
+            <mat-divider></mat-divider>
+            <button mat-menu-item>Underpriced</button>
+          </mat-menu>
+        </div>
+      </div>
+      <div class="chat-box p-4">
+        <div class="kt-chat__message">
+          <div class="chat-user">
+            <span class="">
+              <img src="{{customerimg}}" alt="image">
+            </span>
+            <a href="#" class="chat-username">{{customername}}</a>
+            <span class="chat-time">30 minutes</span>
+          </div>
+          <div class="userchat-text">
+            How do I install Skype?
+          </div>
+        </div>
+        <div class="text-right">
+          <div class="chat-user">
+            <span class="chat-time">25 minutes</span>
+            <a href="#" class="chat-username">You</a>
+            <span class="">
+              <img src="{{customerimg}}" alt="image">
+            </span>
+          </div>
+          <div class="agentchat-text">
+            Need to download the latest version of Skype.
+          </div>
+        </div>
+        <div class="kt-chat__message">
+          <div class="chat-user">
+            <span>
+              <img src="{{customerimg}}" alt="image">
+            </span>
+            <a href="#" class="chat-username">{{customername}}</a>
+            <span class="chat-time">20 seconds</span>
+          </div>
+          <div class="userchat-text">
+            I need additional help.
+          </div>
+        </div>
+        <div class="text-right">
+          <div class="chat-user">
+            <span class="chat-time">10 Seconds</span>
+            <a href="#" class="chat-username">You</a>
+            <span>
+              <img src="{{customerimg}}" alt="image">
+            </span>
+          </div>
+          <div class="agentchat-text">
+            Offer Proposed: Full installation support. $21
+          </div><br>
+          <div class="agentchat-text">
+            Offer Accepted: Full installation support.
+          </div><br>
+          <div class="agentchat-text">
+            The Customer has accepted your Answer.
+          </div>
+        </div>
+      </div>
+      <div class="chat-box-footer">
+        <div class="chat-box-editor">
+          <textarea style="height: 50px" placeholder="Type here..."></textarea>
+        </div>
+        <div class="chat-box-toolbar">
+          <div class="chat-box-tools">
+            <button mat-icon-button [routerLink]="'/'">
+            <mat-icon>camera_alt</mat-icon>
+          </button>
+          <button mat-icon-button [routerLink]="'/'">
+            <mat-icon>photo</mat-icon>
+          </button>
+            <a href="#"><i class="flaticon2-photograph"></i></a>
+            <a href="#"><i class="flaticon2-photo-camera"></i></a>
+          </div>
+          <div class="chat-box-actions">
+            <button type="button" class="btn primary-btn">Reply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

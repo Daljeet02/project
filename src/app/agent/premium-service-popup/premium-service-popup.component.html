@@ -1,0 +1,23 @@
+<h2 mat-dialog-title>Offer Premium Service
+</h2>
+<mat-dialog-content class="mat-typography">
+  <mat-form-field class="w-100">
+    <mat-label>Name of service</mat-label>
+    <select matNativeControl required>
+      <option value="call">Remote tech support with phone call</option>
+      <option value="email">Remote tech support with Email</option>
+      <option value="others">others</option>
+    </select>
+  </mat-form-field>
+  <mat-form-field class="w-100">
+    <textarea matInput placeholder="Description"></textarea>
+  </mat-form-field>
+  <mat-form-field class="w-100">
+    <input matInput placeholder="Amount">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close class="btn secondary-btn">Cancel</button>
+  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+  <button mat-button [mat-dialog-close]="true" class="btn primary-btn">Submit Offer</button>
+</mat-dialog-actions>

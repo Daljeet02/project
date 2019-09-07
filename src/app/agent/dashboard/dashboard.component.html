@@ -1,0 +1,104 @@
+<!-- <div class="mb-5 row" fxLayout="row" fxLayout.lt-md="column" fxFlex fxLayoutGap="20px">
+  <div fxFlex *ngFor="let item of cards" class="col-md-12 col-lg-6 col-xl-3 card-item">
+    <div class="card">
+      <div class="card-details">
+        <h4 class="card-title m-0">
+          {{item.title}}
+        </h4>
+        <span class="{{item.textcolor}} card-stats">
+          {{item.count}}
+        </span>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated {{item.progressclass}}" [style.width]="item.progressvalue"></div>
+      </div>
+      <div class="">
+        <span class="pull-right">
+          {{item.percent}}
+        </span>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- stats -->
+<div class="mb-5 row">
+  <div class="card-item col-md-12 col-lg-6 col-xl-3">
+    <app-stat [textClass]="'primary'" [bgClass]="'primary'" [percent]="'78%'" [count]="'$200'" [title]="'Estimated Earnings'" [valueClass]="'75'"></app-stat>
+  </div>
+  <div class="card-item col-md-12 col-lg-6 col-xl-3">
+    <app-stat [textClass]="'warning'" [bgClass]="'warning'" [percent]="'30%'" [count]="15" [title]="'Questions Responded'" [valueClass]="'25'"></app-stat>
+  </div>
+  <div class="card-item col-md-12 col-lg-6 col-xl-3">
+    <app-stat [textClass]="'danger'" [bgClass]="'danger'" [percent]="'69%'" [count]="'5.00'" [title]="'Average Rating'" [valueClass]="'50'"></app-stat>
+  </div>
+  <div class="card-item col-md-12 col-lg-6 col-xl-3">
+    <app-stat [textClass]="'success'" [bgClass]="'success'" [percent]="'90%'" [count]="172" [title]="'Average Response Time'" [valueClass]="'75'"></app-stat>
+  </div>
+</div>
+
+<!-- charts -->
+<mat-tab-group mat-align-tabs="end" class="mat-elevation-z8 mb-5">
+  <mat-tab label="New Questions">
+    <fusioncharts [chartConfig]=chartConfig [dataSource]=dataSource>
+    </fusioncharts>
+  </mat-tab>
+  <mat-tab label="Agent Responded">
+    <fusioncharts [chartConfig]=chartConfig [dataSource]=dataSource>
+    </fusioncharts>
+  </mat-tab>
+  <mat-tab label="Premium Questions">
+    <fusioncharts [chartConfig]=chartConfig [dataSource]=dataSource>
+    </fusioncharts>
+  </mat-tab>
+  <mat-tab label="Closed Questions">
+    <fusioncharts [chartConfig]=chartConfig [dataSource]=dataSource>
+    </fusioncharts>
+  </mat-tab>
+</mat-tab-group>
+
+<!-- notification -->
+<div class="row">
+  <div class="col-12">
+    <app-request></app-request>
+  </div>
+  <div class="col-12">
+    <div class="card mat-elevation-z8">
+      <h3 class="card-header">
+        Recent Notifications
+      </h3>
+      <div class="card-body notification-list">
+        <div class="list-group">
+          <a href="#" class="list-group-item clearfix d-block">
+            <i class="fa fa-comment fa-fw text-primary"></i><span> New Comment</span>
+            <span class="float-right text-muted small"><em>4 minutes ago</em></span>
+          </a>
+          <a href="#" class="list-group-item clearfix d-block">
+            <i class="fa fa-twitter fa-fw text-warning"></i><span> 3 New Followers</span>
+            <span class="float-right text-muted small"><em>12 minutes ago</em></span>
+          </a>
+          <a href="#" class="list-group-item clearfix d-block">
+            <i class="fa fa-envelope fa-fw text-success"></i><span> Message Sent</span>
+            <span class="float-right text-muted small"><em>27 minutes ago</em></span>
+          </a>
+          <a href="#" class="list-group-item clearfix d-block">
+            <i class="fa fa-tasks fa-fw text-primary"></i><span> New Task</span>
+            <span class="float-right text-muted small"><em>43 minutes ago</em></span>
+          </a>
+          <a href="#" class="list-group-item clearfix d-block">
+            <i class="fa fa-warning fa-fw text-warning"></i><span> Server Not Responding</span>
+            <span class="float-right text-muted small"><em>10:57 AM</em></span>
+          </a>
+          <a href="#" class="list-group-item clearfix d-block">
+            <i class="fa fa-money fa-fw text-success"></i><span> Payment Received</span>
+            <span class="float-right text-muted small"><em>Yesterday</em></span>
+          </a>
+          <a href="#" class="list-group-item clearfix d-block">
+            <i class="fa fa-twitter fa-fw text-warning"></i><span> 3 New Followers</span>
+            <span class="float-right text-muted small"><em>12 minutes ago</em></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
